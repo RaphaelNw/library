@@ -16,18 +16,19 @@
     align-items: center;
   }
 
-  .bg-image {
-    background-image: url(images/trees.jpg);
-      /* Center and scale the image nicely */
-    background-repeat: no-repeat;
-    background-position: 20px 30px;
-    background-size: contain;
-}
 
 .form {
   flex: 1;
   height: 100%;
   overflow: auto;
+  background-color: #F6F7F8;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  
+  width: 100%;
+  padding: 50px;
+  margin: 0 0 40px 0;
+}
 }
   
   .odin-form-header {
@@ -45,7 +46,7 @@
   }
 
 
-  .odin-form {
+  .book-card {
     background-color: #F6F7F8;
     border: 1px solid #D6D9DC;
     border-radius: 3px;

@@ -25,14 +25,14 @@ function render() {
         let book = myLibrary[i];
         const bookElement = document.createElement('div-dom');
         bookElement.setAttribute('class', 'book-card'); //Do later
-        bookElement.innerText = `${book.title} ${book.author} ${book.pages} ${book.read}`
-        const removeBookButton = document.createElement('button');
-        removeBookButton.textContent = 'Remove Book';
+        bookElement.innerText = `${book.title} ${book.author} ${book.pages}`
         const toggleReadButton = document.createElement('button');
         toggleReadButton.innerText = `${book.read ? 'Read' : 'Not Read Yet'}`;
+        const removeBookButton = document.createElement('button');
+        removeBookButton.textContent = 'Remove Book';
         libraryBook.appendChild(bookElement);
-        bookElement.appendChild(removeBookButton);
         bookElement.appendChild(toggleReadButton);
+        bookElement.appendChild(removeBookButton);
         removeBookButton.addEventListener('click', () => {
             removeBook(i)
           });
